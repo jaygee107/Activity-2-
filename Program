@@ -1,0 +1,106 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int M, D, Y;
+    
+    
+    cout << "Good day user! This is a program that generates a date ";
+    cout << "from the integer values for month, day and, year; ";
+    cout << "it would then output the long version of the specific date. ";
+    cout << "For example, you entered 11 for month, 17 for the date ";
+    cout << "and 1999 for the year. ";
+    cout << "This program would print: November 17, 1999. ";
+    cout << "Entering an invalid input would result to an error message" << endl;
+    
+    cout << "\n";
+    cout << "\n";
+    
+    cout << "Please take note of the following: " << endl;
+    cout << "January has 31 days, Febuary has 29 days, March has 31 days" << endl;
+    cout << "April has 30 days, May has 31 days, June has 30 days" << endl;
+    cout << "July has 31 days, August has 31 days, September has 30 days" << endl;
+    cout << "October has 31 days, November has 30 days and December has 31 days" << endl;
+    
+    cout << " Please input the desired integer value of the target month: ";
+    cin >> M;
+    cout << "\n";
+    
+    cout << " Please input the desired integer value of the target date: ";
+    cin >> D;
+    cout << "\n";
+    
+    cout << "Please input the desired integer value of the target year: ";
+    cin >> Y;
+    cout << "\n";
+    
+        if (M == 1 && D <= 31 && D >=1)
+        {
+            cout << "The date you entered is: ";
+            cout << "January " << D << ", " << Y;
+        }
+    
+        else if (M == 2 && D <= 29 && D >=1)
+        {
+            cout << "The date you entered is: ";
+            cout << "February " << D << ", " << Y;
+        }
+        else if (M == 3 && D <= 31 && D >=1)
+        {
+            cout << "The date you entered is: ";
+            cout << "March " << D << ", " << Y;
+        }
+        else if (M == 4 && D <= 30 && D >=1)
+        {
+            cout << "The date you entered is: ";
+            cout << "April " << D << ", " << Y;
+        }
+        else if (M == 5 && D <= 31 && D >=1)
+        {
+            cout << "The date you entered is: ";
+            cout << "May " << D << ", " << Y;
+        }
+        else if (M == 6 && D <= 30 && D >=1)
+        {
+            cout << "The date you entered is: ";
+            cout << "June " << D << ", " << Y;
+        }
+        else if (M == 7 && D <= 31 && D >=1)
+        {
+            cout << "The date you entered is: ";
+            cout << "July " << D << ", " << Y;
+        }
+        else if (M == 8 && D <= 31 && D >=1)
+        {
+            cout << "The date you entered is: ";
+            cout << "August " << D << ", " << Y;
+        }
+        else if (M == 9 && D <= 30 && D >=1)
+        {
+            cout << "The date you entered is: ";
+            cout << "September " << D << ", " << Y;
+        }
+        else if (M == 10 && D <= 31 && D >=1)
+        {
+            cout << "The date you entered is: ";
+            cout << "October " << D << ", " << Y;
+        }
+        else if (M == 11 && D <= 30 && D >=1)
+        {
+            cout << "The date you entered is: ";
+            cout << "November " << D << ", " << Y;
+        }
+        else if (M == 12 && D <= 31 && D >=1)
+        {
+            cout << "The date you entered is: ";
+            cout << "December " << D << ", " << Y;
+        }
+        else
+        {
+            cout << "ERROR: " << "Invalid Date!";
+        }
+    
+    return 0;
+}
